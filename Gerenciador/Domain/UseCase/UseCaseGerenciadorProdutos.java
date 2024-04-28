@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import Domain.Core.Model.Produto;
 
-class UseCaseGerenciadorProdutos {
+public class UseCaseGerenciadorProdutos {
     private Scanner scanner;
 
     public UseCaseGerenciadorProdutos() {

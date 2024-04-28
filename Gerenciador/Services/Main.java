@@ -2,7 +2,9 @@ package Services;
 
 import java.util.Scanner;
 
+import Adapters.Outbound.IntegraçãoBancoDados;
 import Domain.Core.Model.Produto;
+import Domain.UseCase.UseCaseGerenciadorProdutos;
 
 public class Main {
     public static void main(String[] args) {
