@@ -2,13 +2,13 @@ package com.shein;
 
 import java.util.Scanner;
 
-import com.shein.Controllers.ProdutoController;
 import com.shein.Models.Produto;
 import com.shein.Repository.ProdutoRepository;
+import com.shein.View.ProdutoView;
 
 public class App {
     public static void App() {
-        ProdutoController gerenciador = new ProdutoController();
+        ProdutoView gerenciador = new ProdutoView();
         ProdutoRepository integracao = new ProdutoRepository();
         Scanner scanner = new Scanner(System.in);
 
