@@ -1,15 +1,11 @@
-package Services;
+package com.shein;
 
 import java.util.Scanner;
 
-import Adapters.Outbound.IntegraçãoBancoDados;
-import Domain.Core.Model.Produto;
-import Domain.UseCase.UseCaseGerenciadorProdutos;
-
-public class Main {
-    public static void main(String[] args) {
-        UseCaseGerenciadorProdutos gerenciador = new UseCaseGerenciadorProdutos();
-        IntegraçãoBancoDados integracao = new IntegraçãoBancoDados();
+public class App {
+    public static void App(String[] args) {
+        ProdutoController gerenciador = new ProdutoController();
+        ProdutoRepository integracao = new ProdutoRepository();
         Scanner scanner = new Scanner(System.in);
 
         int opcao;
@@ -22,7 +18,7 @@ public class Main {
             System.out.println("0. Sair");
             System.out.println("Escolha uma opção:");
             opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpa o buffer
+            scanner.nextLine(); 
 
             switch (opcao) {
                 case 1:

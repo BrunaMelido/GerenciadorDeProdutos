@@ -1,13 +1,11 @@
-package Domain.UseCase;
+package com.shein;
 
 import java.util.Scanner;
 
-import Domain.Core.Model.Produto;
+public class ProdutoController {
+       private Scanner scanner;
 
-public class UseCaseGerenciadorProdutos {
-    private Scanner scanner;
-
-    public UseCaseGerenciadorProdutos() {
+    public ProdutoController() {
         this.scanner = new Scanner(System.in);
     }
 
@@ -26,8 +24,8 @@ public class UseCaseGerenciadorProdutos {
     }
 
     public void consultarProduto(Produto produto) {
-        System.out.println("Nome: " + produto.getNome());
-        System.out.println("Preço: " + produto.getPreco());
+        System.out.println("Nome: " + produto.getnomeProduto());
+        System.out.println("Preço: " + produto.getPrecoProduto());
         System.out.println("Quantidade em Estoque: " + produto.getQuantidadeEmEstoque());
     }
 
