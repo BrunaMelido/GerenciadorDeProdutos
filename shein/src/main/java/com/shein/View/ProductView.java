@@ -1,6 +1,7 @@
 package com.shein.View;
 
 import java.util.Scanner;
+
 import com.shein.Models.Produto;
 
 public class ProductView {
@@ -57,6 +58,8 @@ public class ProductView {
         System.out.println("Digite a nova quantidade em estoque:");
         String size = scanner.nextLine();
         produto.setSize(size);
+        produto.getUrl();
+
         //colocar todos os valores que forem passados
         return produto;
     }
