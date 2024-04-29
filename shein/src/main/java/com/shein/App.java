@@ -2,14 +2,13 @@ package com.shein;
 
 import java.util.Scanner;
 
+import com.shein.Controllers.Repository.DataBaseConnection;
 import com.shein.Models.Produto;
-import com.shein.Repository.ProdutoRepository;
 import com.shein.View.ProdutoView;
 
 public class App {
-    public static void App() {
+    public static void main(String[] args) {
         ProdutoView gerenciador = new ProdutoView();
-        ProdutoRepository integracao = new ProdutoRepository();
         Scanner scanner = new Scanner(System.in);
 
         int opcao;
@@ -27,7 +26,7 @@ public class App {
             switch (opcao) {
                 case 1:
                     produto = gerenciador.cadastrarProduto();
-                    integracao.salvarNoBanco(produto);
+                    //integracao.salvarNoBanco(produto);
                     break;
                 case 2:
                     if (produto != null) {

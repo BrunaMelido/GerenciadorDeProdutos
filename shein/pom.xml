@@ -7,8 +7,6 @@
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>MVC 1.0 Blank Project (from https://github.com/making/mvc-1.0-blank)</name>
-
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,8 +35,9 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.23</version>
+            <version>42.5.0</version>
         </dependency>
+        
     </dependencies>
     <build>
         <plugins>
