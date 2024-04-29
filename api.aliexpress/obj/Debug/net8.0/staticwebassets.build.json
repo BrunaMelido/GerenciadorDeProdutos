@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dy/Z7tLxrjhrS9jWd4sIJ1r9tD5rjDib6OM0n0dkySU=",
+  "Source": "api.aliexpress",
+  "BasePath": "_content/api.aliexpress",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
