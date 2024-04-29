@@ -2,9 +2,12 @@ package com.shein.View;
 
 import java.util.Scanner;
 
+import com.shein.Controllers.ProdutoController;
 import com.shein.Models.Produto;
 
 public class ProdutoView {
+    ProdutoController _produtoController = new ProdutoController();
+    
     private Scanner scanner;
     
     public ProdutoView() {
@@ -44,13 +47,14 @@ public class ProdutoView {
 
     public void ConsultarProduto(Produto produto) {
         System.out.println("Name: ");
-        String name = scanner.nextLine();
-        System.out.println("Nome: " + produto.getName());
-        // System.out.println("Preço: " + produto.getPrecoProduto());
-        // System.out.println("Quantidade em Estoque: " + produto.getQuantidadeEstoqueProd());
+        String sku = scanner.nextLine();
+        _produtoController.ControllerConsultaProduto();
+        System.out.println("sku: " + produto.getSku());
     }
 
     public void AtualizarEstoque(Produto produto) {
+        System.out.println("sku: ");
+        String sku = scanner.nextLine();
         System.out.println("Digite a nova quantidade em estoque:");
         String size = scanner.nextLine();
         produto.setSize(size);

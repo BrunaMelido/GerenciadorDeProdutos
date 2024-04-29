@@ -42,12 +42,12 @@ public class ProdutoController {
     }
 
     public void ControllerCadastroProduto(){
-        _produtoView.CadastrarProduto();
+       // _produtoView.CadastrarProduto();
     }
     public void ControllerConsultaProduto(){
-        _produtoView.ConsultarProduto(null);
+        //_produtoView.ConsultarProduto(null);
     }
     public void ControllerAtualizaEstoque(){
-        _produtoView.AtualizarEstoque(null);
+        //_produtoView.AtualizarEstoque(null);
         }
     }
