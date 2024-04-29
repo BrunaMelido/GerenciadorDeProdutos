@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 public class BaseReturn {
 
     private String _message;
-    private boolean _worked;    
+    private boolean _worked;
 
     public BaseReturn Success(String message){
         return new BaseReturn(
@@ -17,10 +17,8 @@ public class BaseReturn {
     }
     public BaseReturn Error(String message){
         return new BaseReturn(
-            message, 
+            message,
             false
         );
     }
-
-
 }

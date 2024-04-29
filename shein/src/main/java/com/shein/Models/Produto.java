@@ -16,7 +16,4 @@ public class Produto {
     private String brand;
     private String description;
     private String images;
-    //private double precoProduto;
-    //private int quantidadeEstoqueProd;
-
 }
