@@ -1,10 +1,10 @@
 package com.shein;
 
-import com.shein.Controllers.ProdutoController;
+import com.shein.Controllers.ProductController;
 
 public class App {
     public static void main(String[] args) {
-        ProdutoController _produtoController = new ProdutoController();
+        ProductController _produtoController = new ProductController();
         _produtoController.Iniciar();
     }
 }

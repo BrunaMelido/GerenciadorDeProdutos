@@ -2,20 +2,19 @@ package com.shein.Controllers;
 
 import java.util.Scanner;
 
-import com.shein.View.ProdutoView;
+import com.shein.View.ProductView;
 
-public class ProdutoController {
-    ProdutoView _produtoView = new ProdutoView();
+public class ProductController {
+    ProductView _produtoView = new ProductView();
 
     Scanner scanner = new Scanner(System.in);
 
     public void Iniciar() {
-        ProdutoView _produtoView = new ProdutoView();
         
         int opcao;
 
         do {
-            opcao = _produtoView.MenuEscolha(null);
+            opcao = ProductView.MenuEscolha(null);
 
             switch (opcao) {
                 case 1:

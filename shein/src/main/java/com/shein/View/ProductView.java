@@ -2,16 +2,17 @@ package com.shein.View;
 
 import java.util.Scanner;
 
-import com.shein.Controllers.ProdutoController;
+import com.shein.Controllers.ProductController;
 import com.shein.Models.Produto;
 
-public class ProdutoView {
-    ProdutoController _produtoController = new ProdutoController();
+public class ProductView {
+    ProductController _produtoController = new ProductController();
     
     private Scanner scanner;
     
-    public ProdutoView() {
+    public ProductView() {
         this.scanner = new Scanner(System.in);
+        //this._produtoController = 
     }
 
     public Produto CadastrarProduto() {
@@ -41,13 +42,15 @@ public class ProdutoView {
         String images = scanner.nextLine();
 
         scanner.nextLine(); // Limpa o buffer
-
+        //retorna sucesso
         return new Produto(url,name,sku,price,size,brand,description,images);
     }
 
     public void ConsultarProduto(Produto produto) {
         System.out.println("Name: ");
         String sku = scanner.nextLine();
+
+        //retornar um obj
         _produtoController.ControllerConsultaProduto();
         System.out.println("sku: " + produto.getSku());
     }
@@ -59,6 +62,7 @@ public class ProdutoView {
         String size = scanner.nextLine();
         produto.setSize(size);
         scanner.nextLine(); // Limpa o buffer
+        //frase de sucesso
     }
 
     public static int MenuEscolha(String[] args) {
