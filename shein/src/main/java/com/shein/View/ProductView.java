@@ -1,18 +1,13 @@
 package com.shein.View;
 
 import java.util.Scanner;
-
-import com.shein.Controllers.ProductController;
 import com.shein.Models.Produto;
 
 public class ProductView {
-    ProductController _produtoController = new ProductController();
-    
     private Scanner scanner;
     
-    public ProductView() {
+    public ProductView() throws Exception {
         this.scanner = new Scanner(System.in);
-        //this._produtoController = 
     }
 
     public Produto CadastrarProduto() {
@@ -41,28 +36,29 @@ public class ProductView {
         System.out.println("images");
         String images = scanner.nextLine();
 
-        scanner.nextLine(); // Limpa o buffer
-        //retorna sucesso
+        scanner.nextLine();
+
         return new Produto(url,name,sku,price,size,brand,description,images);
     }
 
-    public void ConsultarProduto(Produto produto) {
+    public Produto ConsultarProduto() {
+        Produto produto = new Produto();
         System.out.println("Name: ");
-        String sku = scanner.nextLine();
-
-        //retornar um obj
-        _produtoController.ControllerConsultaProduto();
-        System.out.println("sku: " + produto.getSku());
+        String skuInput = scanner.nextLine();
+        produto.setSku(skuInput);
+        return produto;
     }
 
-    public void AtualizarEstoque(Produto produto) {
+    public Produto AtualizarEstoque() {
+        Produto produto = new Produto();
         System.out.println("sku: ");
-        String sku = scanner.nextLine();
+        String skuInput = scanner.nextLine();
+        produto.setSku(skuInput);
         System.out.println("Digite a nova quantidade em estoque:");
         String size = scanner.nextLine();
         produto.setSize(size);
-        scanner.nextLine(); // Limpa o buffer
-        //frase de sucesso
+        //colocar todos os valores que forem passados
+        return produto;
     }
 
     public static int MenuEscolha(String[] args) {

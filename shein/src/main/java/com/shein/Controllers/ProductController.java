@@ -1,47 +1,35 @@
 package com.shein.Controllers;
 
-import java.util.Scanner;
-
+import com.shein.Controllers.Repository.DataBaseRepository;
+import com.shein.Models.BaseReturn;
+import com.shein.Models.Produto;
 import com.shein.View.ProductView;
 
 public class ProductController {
-    ProductView _produtoView = new ProductView();
+    private ProductView _produtoView;
+    private DataBaseRepository _repository;
+    private int _eperation;
+    private Produto _produto;
 
-    Scanner scanner = new Scanner(System.in);
-
-    public void Iniciar() {
-        
-        int opcao;
-
-        do {
-            opcao = ProductView.MenuEscolha(null);
-
-            switch (opcao) {
-                case 1:
-                _produtoView.CadastrarProduto();
-                    break;
-                case 2:
-                _produtoView.ConsultarProduto(null);
-                    //ConsultaProduto();
-                    break;
-                case 3:
-                _produtoView.AtualizarEstoque(null);
-                    //atualizaEstoque();
-                    break;
-                case 4:
-                    //EscolhaSenha();
-                    break;
-                case 0:
-                    System.out.println("Saindo...");
-                    break;
-                default:
-                    System.out.println("Opção inválida.");
-            }
-        } while (opcao != 0);
+    public ProductController() throws Exception {
+        _produtoView = new ProductView();
+        _repository = new DataBaseRepository();
     }
 
-    public void ControllerCadastroProduto(){
-       // _produtoView.CadastrarProduto();
+    public void Iniciar() {
+        while (_eperation != 0){
+            _eperation = ProductView.MenuEscolha(null);
+            if(_eperation == 1) _produto = _produtoView.CadastrarProduto();
+            if(_eperation == 2) _produto = _produtoView.ConsultarProduto();
+            if(_eperation == 3) _produto = _produtoView.AtualizarEstoque();
+            if(_eperation == 0)  System.out.println("Saindo...");
+            else System.out.println("Opção inválida.");
+        }
+    }
+
+    public BaseReturn ControllerCadastroProduto() throws Exception {
+       BaseReturn response = _repository.CadastrarProduto(_produto);
+       return response;
     }
     public void ControllerConsultaProduto(){
         //_produtoView.ConsultarProduto(null);
