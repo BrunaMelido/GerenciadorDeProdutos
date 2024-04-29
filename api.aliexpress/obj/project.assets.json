@@ -640,19 +640,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ícaro-Macedo\\.nuget\\packages\\": {}
+    "C:\\Users\\gabri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ícaro-Macedo\\Documents\\Code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj",
       "projectName": "api.aliexpress",
-      "projectPath": "C:\\Users\\Ícaro-Macedo\\Documents\\Code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj",
-      "packagesPath": "C:\\Users\\Ícaro-Macedo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ícaro-Macedo\\Documents\\Code\\GerenciadorDeProdutos\\api.aliexpress\\obj\\",
+      "projectPath": "C:\\Users\\gabri\\code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj",
+      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gabri\\code\\GerenciadorDeProdutos\\api.aliexpress\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ícaro-Macedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -672,6 +672,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -710,7 +715,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
