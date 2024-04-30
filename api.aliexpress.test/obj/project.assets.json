@@ -6326,19 +6326,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabri\\.nuget\\packages\\": {}
+    "C:\\Users\\icaro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\code\\GerenciadorDeProdutos\\api.aliexpress.test\\api.aliexpress.test.csproj",
+      "projectUniqueName": "C:\\Code\\GerenciadorDeProdutos\\api.aliexpress.test\\api.aliexpress.test.csproj",
       "projectName": "api.aliexpress.test",
-      "projectPath": "C:\\Users\\gabri\\code\\GerenciadorDeProdutos\\api.aliexpress.test\\api.aliexpress.test.csproj",
-      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\code\\GerenciadorDeProdutos\\api.aliexpress.test\\obj\\",
+      "projectPath": "C:\\Code\\GerenciadorDeProdutos\\api.aliexpress.test\\api.aliexpress.test.csproj",
+      "packagesPath": "C:\\Users\\icaro\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\GerenciadorDeProdutos\\api.aliexpress.test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\icaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6352,8 +6352,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\gabri\\code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj": {
-              "projectPath": "C:\\Users\\gabri\\code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj"
+            "C:\\Code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj": {
+              "projectPath": "C:\\Code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj"
             }
           }
         }
