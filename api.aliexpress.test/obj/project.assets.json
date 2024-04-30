@@ -6326,19 +6326,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\icaro\\.nuget\\packages\\": {}
+    "C:\\Users\\Ícaro-Macedo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\GerenciadorDeProdutos\\api.aliexpress.test\\api.aliexpress.test.csproj",
+      "projectUniqueName": "C:\\Users\\Ícaro-Macedo\\Documents\\Code\\GerenciadorDeProdutos\\api.aliexpress.test\\api.aliexpress.test.csproj",
       "projectName": "api.aliexpress.test",
-      "projectPath": "C:\\Code\\GerenciadorDeProdutos\\api.aliexpress.test\\api.aliexpress.test.csproj",
-      "packagesPath": "C:\\Users\\icaro\\.nuget\\packages\\",
-      "outputPath": "C:\\Code\\GerenciadorDeProdutos\\api.aliexpress.test\\obj\\",
+      "projectPath": "C:\\Users\\Ícaro-Macedo\\Documents\\Code\\GerenciadorDeProdutos\\api.aliexpress.test\\api.aliexpress.test.csproj",
+      "packagesPath": "C:\\Users\\Ícaro-Macedo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ícaro-Macedo\\Documents\\Code\\GerenciadorDeProdutos\\api.aliexpress.test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\icaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ícaro-Macedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6352,8 +6352,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj": {
-              "projectPath": "C:\\Code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj"
+            "C:\\Users\\Ícaro-Macedo\\Documents\\Code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj": {
+              "projectPath": "C:\\Users\\Ícaro-Macedo\\Documents\\Code\\GerenciadorDeProdutos\\api.aliexpress\\api.aliexpress.csproj"
             }
           }
         }
@@ -6362,11 +6362,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -6414,7 +6409,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

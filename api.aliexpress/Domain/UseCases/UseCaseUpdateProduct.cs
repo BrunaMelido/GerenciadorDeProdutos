@@ -1,15 +1,29 @@
 ﻿
 using aliexpress.Domain.Core.Models;
 using aliexpress.Domain.Core.Ports.Inbound.UseCases;
+using aliexpress.Domain.Core.Ports.Outbound.DBAdapter;
 
 namespace aliexpress.Domain.UseCases
-{
-
-    internal class UseCaseUpdateProduct : IUseCaseUpdateProduct
+{ 
+    public class UseCaseUpdateProduct : IUseCaseUpdateProduct
     {
-        public Task<BaseReturn> Execute(ProductTransaction product)
+        private readonly IDBARepository _IDBRepository;
+
+        public UseCaseUpdateProduct(IDBARepository dbRepository)
         {
-            throw new NotImplementedException();
+            _IDBRepository = dbRepository;
+        }
+        public async Task<BaseReturn> Execute(ProductTransaction product)
+        {
+            try
+            {
+                var response = await  _IDBRepository.UpdateProduct(product);
+                return new BaseReturn().Success(response);
+            }
+            catch (Exception ex)
+            {
+                return new BaseReturn().ErrorSystem(ex);
+            }
         }
     }
 }

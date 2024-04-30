@@ -12,13 +12,12 @@ namespace aliexpress.Domain.UseCases
         {
             _IDBRepository = dbRepository;
         }
-
         public async Task<BaseReturn> Execute(ProductTransaction product)
         {
             try
             {
-                var response = _IDBRepository.RegisterProduct(product);
-                return new BaseReturn().Success(response.Result);
+                var response = await _IDBRepository.RegisterProduct(product);
+                return new BaseReturn().Success(response);
             }
             catch (Exception ex)
             {
